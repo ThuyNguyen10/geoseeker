@@ -1,0 +1,15 @@
+# Core ML
+torch>=2.2
+torchvision>=0.17
+captum>=0.7
+
+# Imaging / data
+Pillow>=10.0
+numpy>=1.26
+
+# Overlay app (screen capture + hotkeys)
+mss>=9.0
+pynput>=1.7
+
+# Nice-to-have progress bars
+tqdm>=4.66
