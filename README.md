@@ -56,8 +56,18 @@ Key flags: `--backbone {resnet18,resnet50,mobilenet_v3_large}`,
 ```bash
 python -m geoseeker.predict path/to/street.jpg --topk 5
 ```
+Output
+```
+Top predictions:
+  1. Austria                       98.0%
+  2. Poland                         0.1%
+  3. France                         0.1%
+  4. Malta                          0.1%
+  5. Singapore                      0.1%
+```
 
 ## 4. Explain (Captum Grad-CAM)
+![alt text](resources/explaination.png)
 
 See which regions drove the guess:
 
@@ -68,6 +78,8 @@ python -m geoseeker.explain path/to/street.jpg --out explanation.png
 Produces a heatmap overlay (red = most influential for the predicted country).
 
 ## 5. Live overlay for GeoGuessr
+
+![alt text](resources/Livemode.png)
 
 ```bash
 python -m geoseeker.overlay                      # capture primary monitor
